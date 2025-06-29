@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+#container {
+    width: 1000px;
+    height: 550px;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(BG.jpg);
+
+}
+
+#calculator {
+    width: 320px;
+    height: 520px;
+    background-color: hsl(204, 14%, 93%);
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 5px;
+    top: 20px;
+    position: relative;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(CALBG.jpg);
+}
+
+#keyboard {
+    height: 400px;
+    padding: 10px;
+}
+
+.operator, .number, .empty {
+    width: 50px;
+    height: 50px;
+    margin: 11px;
+    float: left;
+    border-radius: 50%;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.operator:active, .number:active{
+    font-size: 22px;
+    transform: scale(0.9);
+    background-color: #ddd;
+}
+
+.operator {
+    background-color: #ff9500;
+    color: white;
+}
+
+.number {
+    background-color: #e0e0e0;
+    color: black;
+}
+
+.empty {
+    background-color: transparent;
+    cursor: default;
+}
